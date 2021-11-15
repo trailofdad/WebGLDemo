@@ -27,12 +27,9 @@ void main() {
 `;
 
 const initDemo = function() {
-    console.log("This is working");
-
     var canvas = document.getElementById('app-surface');
     var gl = canvas.getContext('webgl');
     var { mat4 } = glMatrix;
-    console.log(mat4);
 
     if (!gl) {
         console.log('WebGL not supported falling back on experimental');
